@@ -1,3 +1,5 @@
+### This file is used to train the chatbot on dialogue and appropriate responses.
+
 from Chatbot import chatbot
 from chatterbot.trainers import ListTrainer
 
