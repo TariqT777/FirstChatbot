@@ -15,6 +15,7 @@ chatbot = ChatBot(
    ) #Creates new chatbot. Allen Iverson initials : A.I. 
 
 
+### Training chatbot to learn new lines of dialogue. The chatbot should be able to use this dialogue to more accurately respond to users.
 trainer = ListTrainer(chatbot)
 
 trainer.train([
