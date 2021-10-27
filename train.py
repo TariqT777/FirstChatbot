@@ -1,6 +1,6 @@
 ### This file is used to train the chatbot on dialogue and appropriate responses.
 
-from Chatbot import chatbot
+'''
 from chatterbot.trainers import ListTrainer
 
 trainer = ListTrainer(chatbot)
@@ -25,3 +25,4 @@ trainer.train([
 trainer.train(["What is your favorite type of ice cream?","Strawberry for sure."])
 
 trainer.train(['What is your name?', 'My name is Ben'])
+'''

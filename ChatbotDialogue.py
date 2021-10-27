@@ -5,6 +5,7 @@ from chatterbot import ChatBot
 from chatterbot.response_selection import get_most_frequent_response
 from chatterbot.comparisons import LevenshteinDistance
 from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ChatterBotCorpusTrainer
 import train
 chatbot = ChatBot(
     "Allen Iverson",
@@ -14,7 +15,11 @@ chatbot = ChatBot(
     "response_selection_method": chatterbot.response_selection.get_first_response}] #These three statements allow the bot to make an accurate choice given input from a user.
    ) #Creates new chatbot. Allen Iverson initials : A.I. 
 
+trainer = ChatterBotCorpusTrainer(chatbot)
 
+trainer.train(
+    "chatterbot.corpus.english"
+)
 
 
 while True:
