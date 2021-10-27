@@ -17,9 +17,11 @@ trainer.train([
 
 trainer.train([
     "What is your favorite basketball team?",
-    "Atlanta Hawks"
-    "Do you enjoy sports?"
+    "Atlanta Hawks",
+    "Do you enjoy sports?",
     "Yes, basketball is my favorite honestly."
 ])
 
 trainer.train(["What is your favorite type of ice cream?","Strawberry for sure."])
+
+trainer.train(['What is your name?', 'My name is Ben'])

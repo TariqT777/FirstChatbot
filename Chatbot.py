@@ -15,9 +15,9 @@ chatbot = ChatBot(
    ) #Creates new chatbot. Allen Iverson initials : A.I. 
 
 
-### Training chatbot to learn new lines of dialogue. The chatbot should be able to use this dialogue to more accurately respond to users.
-trainer = ListTrainer(chatbot)
 
-trainer.train(['What is your name?', 'My name is Ben'])
-response = chatbot.get_response('What is your favorite ice cream?')
-print(response)
+
+while True:
+    request = input('Talk to me: ')
+    response = chatbot.get_response(request)
+    print(response)
