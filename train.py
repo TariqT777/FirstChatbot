@@ -21,3 +21,5 @@ trainer.train([
     "Do you enjoy sports?"
     "Yes, basketball is my favorite honestly."
 ])
+
+trainer.train(["What is your favorite type of ice cream?","Strawberry for sure."])

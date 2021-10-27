@@ -18,18 +18,6 @@ chatbot = ChatBot(
 ### Training chatbot to learn new lines of dialogue. The chatbot should be able to use this dialogue to more accurately respond to users.
 trainer = ListTrainer(chatbot)
 
-trainer.train([
-    "Hi, can I help you?",
-    "Sure, I'd like to book a flight to Iceland.",
-    "Your flight has been booked."
-])
-
-# Get a response to the input text 'I would like to book a flight.'
-response = chatbot.get_response('I would like to book a flight.')
-
+trainer.train(['What is your name?', 'My name is Ben'])
+response = chatbot.get_response('What is your favorite ice cream?')
 print(response)
-
-'''
-response = chatbot.get_response("What's your fav sport?")
-print(response)
-'''
