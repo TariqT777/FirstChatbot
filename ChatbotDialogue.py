@@ -17,12 +17,14 @@ chatbot = ChatBot(
 
 trainer = ChatterBotCorpusTrainer(chatbot)
 
+
+#This trains the chatbot with pre-set dialogue. The chatbot will be able to reactively learn from conversations using this trainer.
 trainer.train(
-    "chatterbot.corpus.english"
+    "chatterbot.corpus.english" 
 )
 
 
-while True:
+while True: #This will allow the user to continue having dialogue with the chatbot until the user decides to stop.
     request = input('Talk to me: ')
     response = chatbot.get_response(request)
     print(response)
