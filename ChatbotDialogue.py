@@ -7,7 +7,7 @@ from chatterbot.response_selection import get_most_frequent_response
 from chatterbot.comparisons import LevenshteinDistance
 from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
-import train
+#import train
 chatbot = ChatBot(
     "Allen Iverson",
     logic_adapters=[
@@ -29,3 +29,5 @@ while True: #This will allow the user to continue having dialogue with the chatb
     request = input('Talk to me: ')
     response = chatbot.get_response(request)
     print(response)
+    if request == "":
+        break
