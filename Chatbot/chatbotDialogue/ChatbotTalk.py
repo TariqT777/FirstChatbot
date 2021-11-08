@@ -24,10 +24,12 @@ trainer.train(
     "chatterbot.corpus.english" 
 )
 
-
-while True: #This will allow the user to continue having dialogue with the chatbot until the user decides to stop.
-    request = input('Talk to me: ')
-    response = chatbot.get_response(request)
-    print(response)
-    if request == "":
-        break
+def talk():
+    while True: #This will allow the user to continue having dialogue with the chatbot until the user decides to stop.
+        request = input('Talk to me: ')
+        response = chatbot.get_response(request)
+        print(response)
+        yield response
+        if request == "":
+            break
+talk()
