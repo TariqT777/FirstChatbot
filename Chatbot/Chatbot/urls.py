@@ -19,5 +19,6 @@ from chatbotDialogue import views
 urlpatterns = [ 
     path('', views.index, name='index'),
     path('chatbotDialogue/', include('chatbotDialogue.urls')),
+    path('talk/',views.chatbot),
     path('admin/', admin.site.urls),
 ]
