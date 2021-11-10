@@ -5,5 +5,5 @@ from chatbotDialogue import ChatbotTalk
 def index(request):
     return HttpResponse("Hello, world. You're at the dialogue index.")
 
-def chatbot(request):
+def chatbot(request): #Trying to display chatbot output from chatbotTalk file but having issues.
     return HttpResponse(ChatbotTalk.talk)
